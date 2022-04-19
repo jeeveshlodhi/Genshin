@@ -1,0 +1,63 @@
+.bannerWrapper {
+    background-color: #19193b;
+    height: 50vh;
+}
+
+.bannerImg {
+    border-radius: 20px 20px 0px 0px;
+    width: 1000px;
+    object-fit: cover;
+    object-position: 20% 10%;
+    border: 0px solid black;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.mainSlider {
+    position: relative;
+    display: inline-block;
+}
+
+.mainSlider:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+}
+
+.curr {
+    width: 300px;
+    object-fit: cover;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.prev {
+    width: 250px;
+    object-fit: cover;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.next {
+    width: 250px;
+    object-fit: cover;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.arrow {
+    vertical-align: middle;
+    width: 50px;
+    padding: 10px;
+}

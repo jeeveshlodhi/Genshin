@@ -1,0 +1,103 @@
+.homeWrapper {
+    background-image: url('../assets/homepage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.homeWrapper::before {
+    background-image: radial-gradient(circle, red, yellow, green);
+    position: absolute;
+    display: block;
+    background: blue;
+}
+
+.logo {
+    width: 8vw;
+}
+
+.headerWrapper {
+    display: flex;
+}
+
+.optionWrapper {
+    display: flex;
+    color: white;
+    margin: 15px 50px;
+}
+
+.optionWrapper div {
+    padding: 10px 15px;
+}
+
+.sideMenu {
+    margin-right: 25px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.downloadBtn {
+    background-color: rgb(233, 201, 21);
+    padding: 10px 20px;
+    outline: none;
+    border: 1px;
+    border-radius: 10px;
+    color: rgb(167, 44, 44);
+    font-family: 'Genshin';
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+}
+
+.downloadBtn:active {
+    box-shadow: 0px 0px black;
+    transform: translate(1px, 1px);
+}
+
+.downloadWrapper {
+    bottom: 5%;
+    position: absolute;
+    right: auto;
+    left: 25%;
+}
+
+.downloadLinks {
+    display: flex;
+}
+
+.downloadLinks img {
+    padding: 10px;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.videoWrapper {
+    z-index: 1;
+}
+
+.videoBtn {
+    z-index: 2;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.videoBtn:active {
+    width: 25px;
+    height: 25px;
+}
